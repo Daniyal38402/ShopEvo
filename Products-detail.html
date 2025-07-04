@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products-details.css">
+    <title>Products details - shopEvo</title>
+</head>
+<body>
+    <header>
+    <div class="logo">shop<span>Evo</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Products-detail.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="product-container">
+    <button class="back-btn" onclick="history.back()">← Back</button>
+
+    <div class="product-detail">
+      <div class="carousel">
+        <img src="img/product1.jpg" id="mainImage" alt="Product Image" />
+        <div class="thumbnails">
+          <img src="img/wireless headphones 1.jfif" onclick="changeImage(this.src)" />
+          <img src="img/wireless headphones 2.jfif" onclick="changeImage(this.src)" />
+          <img src="img/wireless headphones 3.jfif" onclick="changeImage(this.src)" />
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h2>Smart Wireless Headphones</h2>
+        <p class="price">$79.99</p>
+        <p class="description">
+          Experience immersive sound with noise-canceling features. Long battery life and Bluetooth 5.0.
+        </p>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1" />
+
+        <button class="add-to-cart">Add to Cart</button>
+
+        <div class="tabs">
+          <button onclick="openTab('desc')" class="tab active">Description</button>
+          <button onclick="openTab('reviews')" class="tab">Reviews</button>
+        </div>
+
+        <div id="desc" class="tab-content active">
+          <p>This is a high-quality product with advanced audio technology and comfortable design.</p>
+        </div>
+        <div id="reviews" class="tab-content">
+          <p>⭐⭐⭐⭐⭐ Great quality and fast delivery! - Ali</p>
+          <p>⭐⭐⭐⭐ Very nice sound. - Sarah</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="related-products">
+      <h3>Related Products</h3>
+      <div class="related-grid">
+        <div class="related-item">
+          <img src="img/wireless airburds.jfif" />
+          <p>Wireless Earbuds</p>
+          <span>$49.99</span>
+        </div>
+        <div class="related-item">
+          <img src="img/bluetooth speaker.jfif" />
+          <p>Bluetooth Speaker</p>
+          <span>$59.99</span>
+        </div>
+        <div class="related-item">
+          <img src="img/power bank.jfif" />
+          <p>Power Bank</p>
+          <span>$29.99</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 shopEvo. All rights reserved.
+  </footer>
+
+  <script src="products-details.js"></script>
+</body>
+</html>
