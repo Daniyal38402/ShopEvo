@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>checkout</title>
+</head>
+<body>
+    
+  <div class="container">
+    <!-- Checkout Form -->
+    <div class="checkout-form">
+      <h2>Billing Information</h2>
+      <form id="checkoutForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="address">Address</label>
+        <textarea id="address" rows="3" required></textarea>
+
+        <label for="card">Card Number</label>
+        <input type="text" id="card" placeholder="1234 5678 9012 3456" required />
+
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <h2>Order Summary</h2>
+      <div id="cartItems"></div>
+      <div class="total" id="totalPrice">Total: $0.00</div>
+    </div>
+  </div>
+
+    
+
+  <script src="checkout.js"></script>
+</body>
+</html>
